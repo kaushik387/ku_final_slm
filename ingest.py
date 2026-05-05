@@ -5,8 +5,8 @@ loader = PyPDFLoader("attention_all_u_need.pdf")
 docs = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=800,
-    chunk_overlap=100
+    chunk_size=500,
+    chunk_overlap=50
 )
 
 chunks = splitter.split_documents(docs)
