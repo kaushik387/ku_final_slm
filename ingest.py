@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters.character import RecursiveCharacterTextSplitter
 
-loader = PyPDFLoader("attention_all_u_need.pdf")
+loader = PyPDFLoader("clustering.pdf")
 docs = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(
